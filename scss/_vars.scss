@@ -1,0 +1,45 @@
+$accent-color: #8B6CCA;
+$default-color: #303030;
+$white-color: #fff;
+
+
+%lato-900 {
+  font-family: 'Lato-Black', sans-serif;
+  font-weight: 900;
+}
+%lato-700  {
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%monserrat-900 {
+  font-family: 'Montserrat-Black',
+  sans-serif;
+  font-weight: 900;
+}
+
+%monserrat-800 {
+  font-family: 'Montserrat-ExtraBold',
+    sans-serif;
+  font-weight: 800;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+  }
+}
