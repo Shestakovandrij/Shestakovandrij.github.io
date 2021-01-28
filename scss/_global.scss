@@ -1,0 +1,122 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $white-color;
+
+  font-size: 18px;
+  line-height: 1.3;
+  color: $default-color;
+  @extend %lato-700;
+
+  display: flex;
+  flex-direction: column;
+
+  @include r(575) {
+    font-size: 14px;
+  }  
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--lg {
+    max-width: 1800px;
+  }
+}
+
+.title {
+  font-size: 66px;
+  line-height: 1.1;
+  @extend %monserrat-900;
+  max-width: 652px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 10px;
+    background-color: $accent-color;
+    left: 0;
+    top: -51px;
+  }
+
+  &-lg {
+    font-size: 35px;
+    @extend %monserrat-800;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 10px;
+      background-color: $accent-color;
+      left: 0;
+      top: -51px;
+    }
+
+    @include r(575) {
+      font-size: 25px;
+    }
+  }
+
+  @include r(1199) {
+    font-size: 56px;
+  }
+
+  @include r(991) {
+    font-size: 46px;
+  }
+
+  @include r(768) {
+    font-size: 26px;
+  }
+}
+
+a {
+  outline: transparent;
+}
+
+.btn {
+
+  padding: 20px 63px 23px 43px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  @extend %lato-700;
+
+  border: 2px solid $default-color;
+  border-radius: 33px;
+
+  position: relative;
+  transition: animation background-color 0.5s;
+
+  &:hover {
+    transition: all 0.5s;
+    animation: pulse 1.5s infinite;
+  }
+
+  &::after {
+    content: url(../images/icons/arrow-btn.svg);
+    position: absolute;
+    background-color: $default-color;
+    padding: 13px 13px 11px 13px;
+    border-radius: 50%;
+    right: 8px;
+    top: 10px;
+  }
+
+  @include r(768) {
+    font-size: 14px;
+  }
+}
