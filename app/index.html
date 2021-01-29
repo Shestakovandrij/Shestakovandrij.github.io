@@ -32,7 +32,7 @@
           <a class="menu__logo" href="#">
             Andrii Shestakov
           </a>
-          <nav class="menu">
+          <nav class="menu__nav">
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">
@@ -54,6 +54,66 @@
         </div>
       </div>
     </div>
+
+    <section class="about">
+      <div class="container container--lg">
+        <h2 class="about__title title">
+          About me
+        </h2>
+        <img class="about__img" src="images/me.jpeg" alt="me">
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi dolorum error voluptate, ipsa, est
+          ratione, cupiditate ab consequuntur voluptas officia repellendus vero magni provident delectus voluptatibus
+          quasi illo optio enim!
+        </p>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti amet atque quisquam cupiditate. In, porro
+          dolorum eius voluptas eaque saepe minus harum! Quos, non itaque! Unde temporibus natus corporis.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title title">
+          My portfolio
+        </h2>
+        <p class="portfolio__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="portfolio__filters nav-filter">
+          <button class="nav-filter__btn" data-filter="all">All</button>
+          <button class="nav-filter__btn" data-filter=".category-a">Landing</button>
+          <button class="nav-filter__btn" data-filter=".category-b">Pro</button>
+        </div>
+        <div class="product__items">
+          <article class="product-cart mix category-a">
+            <img class="product-cart__img" src="images/product/1.png" alt="product">
+            <h3 class="product-cart__title">Wooden radio</h3>
+            <span class="product-cart__price">$29.00</span>
+            <div class="product-cart__links">
+              <a class="product-cart__link product-cart__link--search" href="#">
+                <svg class="product-cart__icon">
+                  <use xlink:href="#product-search"></use>
+                </svg>
+              </a>
+              <button class="product-cart__link" href="#">
+                <svg class="product-cart__icon">
+                  <use xlink:href="#product-cart"></use>
+                </svg>
+              </button>
+              <button class="product-cart__link" href="#">
+                <svg class="product-cart__icon">
+                  <use xlink:href="#product-heart"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <div class="home">
       <div class="container">
         <div class="home__links">
