@@ -1,0 +1,64 @@
+.header {
+  padding: 500px 0 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  &__inner {
+    margin-left: 34%;
+  }
+
+  &__title {
+    letter-spacing: -2px;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    @extend %lato-600;
+    color: #2c3e50;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: $default-color;
+    background-color: transparent;
+    border-color: $default-color;
+    padding: 10px 16px;
+    margin: 0 10px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid $default-color;
+    transition: color, background-color 0.5s;
+
+    &:hover {
+      color: #eee;
+      background-color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}
+
+.menu {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 42px;
+    line-height: 20px;
+    @extend %lato-700;
+  }
+}
