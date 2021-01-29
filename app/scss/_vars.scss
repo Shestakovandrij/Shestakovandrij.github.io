@@ -1,16 +1,17 @@
-// $accent-color: #8B6CCA;
-// $default-color: #303030;
-// $white-color: #fff;
+$accent-color: #2c3e50;
+$default-color: #76818d;
+$white-color: #fff;
 
 
-// %lato-900 {
-//   font-family: 'Lato-Black', sans-serif;
-//   font-weight: 900;
-// }
-// %lato-700  {
-//   font-family: 'Lato-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%lato-600 {
+  font-family: 'Lato-SemiBold',
+  sans-serif;
+  font-weight: 600;
+}
+%lato-700  {
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 700;
+}
 
 // %monserrat-900 {
 //   font-family: 'Montserrat-Black',
