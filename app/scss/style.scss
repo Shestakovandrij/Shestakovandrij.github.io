@@ -12,26 +12,3 @@
 @import "components/footer";
 
 
-.logo {
-  &__img {
-    max-height: 25px;
-  }
-}
-
-.jq-ry-container {
-  padding: 0;
-  margin-bottom: 5px;
-}
-
-.home {
-  &__links {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
-  }
-
-  &__link {
-    font-size: 50px;
-    padding: 50px;
-  }
-}
