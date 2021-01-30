@@ -77,70 +77,6 @@
   }
 }
 
-// .portfolio-cart {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   box-shadow: 0 5px 50px #f9f9f9;
-//   position: relative;
-//   // padding: 55px 10px 40px;
-//   height: 381px;
-
-
-
-//   &__img {
-//     max-width: 100%;
-//     max-height: 363px;
-//   }
-
-//   &:hover .portfolio-cart__content {
-//     opacity: 1;
-//   }
-
-//   &__title {
-//     font-size: 16px;
-//     @extend %lato-600;
-
-//     margin-top: auto;
-
-//     text-overflow: ellipsis;
-//     overflow: hidden;
-//     -ms-line-clamp: 2;
-//     -webkit-line-clamp: 2;
-//     line-clamp: 2;
-//     display: -webkit-box;
-//     display: box;
-//     word-wrap: break-word;
-//     -webkit-box-orient: vertical;
-//     box-orient: vertical;
-//   }
-
-//   &__icon {
-//     width: 25px;
-//     height: 25px;
-//     fill: $accent-color;
-//   }
-
-//   &__content {
-//     display: flex;
-//     flex-direction: column;
-//     opacity: 0;
-//     transition: opacity 0.3s;
-//     position: absolute;
-//   }
-
-//   &__link {
-//     position: absolute;
-//     content: '';
-//     font-size: 0;
-//     right: 0;
-//     left: 0;
-//     top: 0;
-//     bottom: 0;
-//   }
-// }
-
 .portfolio-cart {
   max-width: 280px;
   height: 360px;
@@ -204,10 +140,6 @@
     align-items: center;
     justify-content: center;
     padding: 25px;
-  }
-
-  &__title {
-
   }
 
   &__subtitle {
