@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header" style="background-image: url(images/bg.jpg);">
+  <header class="header" id="header" style="background-image: url(images/bg.jpg);">
     <div class="container">
       <div class="header__inner">
         <h1 class="header__title">
@@ -19,8 +19,8 @@
         <p class="header__text">
           Web Developer
         </p>
-        <a href="#" class="header__link">About me</a>
-        <a href="#" class="header__link">Portfolio</a>
+        <a href="#about" class="header__link">About me</a>
+        <a href="#portfolio" class="header__link">Portfolio</a>
       </div>
     </div>
   </header>
@@ -29,23 +29,23 @@
     <div class="menu">
       <div class="container">
         <div class="menu__inner">
-          <a class="menu__logo" href="#">
+          <a class="menu__logo" href="#header">
             Andrii Shestakov
           </a>
           <nav class="menu__nav">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#about">
                   About me
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#portfolio">
                   Portfolio
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#contact">
                   Contact
                 </a>
               </li>
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container container--lg">
         <h2 class="about__title title">
           About me
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section class="portfolio" style="background-image: url(images/bg-op.jpg);">
+    <section class="portfolio" id="portfolio" style="background-image: url(images/bg-op.jpg);">
       <div class="container">
         <h2 class="portfolio__title title">
           My portfolio
@@ -132,8 +132,32 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2 class="footer__title title">Contact me now!</h2>
 
+      <form class="footer__form">
+
+        <div class="footer__top">
+          <label class="footer__label">
+            <input class="footer__input" name="fname" type="text" placeholder="Your name" required>
+          </label>
+
+          <label class="footer__label">
+
+            <input class="footer__input" name="subscribe[email]" type="email" placeholder="Email address" required>
+          </label>
+        </div>
+
+        <textarea class="footer__desc" name="Contact-Message" 
+          maxlength="5000" placeholder="Message" required></textarea>
+
+        <button class="footer__btn" type="submit">
+          Send Message
+        </button>
+
+      </form>
+    </div>
   </footer>
   <script src="js/main.min.js"></script>
 </body>
