@@ -28,4 +28,12 @@ $(function(){
     }, 5400)
 });
 
+ AOS.init();
+
+ var mixer = mixitup('.portfolio__items', {
+    selectors: {
+      control: '.portfolio__filters > .nav-filter__btn'
+    }
+  });
+
 });
