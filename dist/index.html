@@ -161,7 +161,7 @@
     <div class="container">
       <h2 class="footer__title title">Contact me now!</h2>
 
-      <form class="footer__form" data-aos="fade-up">
+      <form class="footer__form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" data-aos="fade-up">
 
         <div class="footer__top" data-aos="fade-up">
           <label class="footer__label">
@@ -177,11 +177,10 @@
         <textarea class="footer__desc" name="Contact-Message" maxlength="5000" placeholder="Message"
           required></textarea>
 
-        <button class="footer__btn" type="submit">
-          Send Message
-        </button>
+        <input value="Send Message" class="footer__btn" type="submit">
 
       </form>
+
 
       <div class="footer__social">
         <ul class="footer__list">
@@ -212,5 +211,34 @@
   </footer>
   <script src="js/main.min.js"></script>
 </body>
+<script>
+  // Отправка данных на сервер
+  function send(event, php) {
+    console.log("Отправка запроса");
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
+    var req = new XMLHttpRequest();
+    req.open('POST', php, true);
+    req.onload = function () {
+      if (req.status >= 200 && req.status < 400) {
+        json = JSON.parse(this.response); // Ебанный internet explorer 11
+        console.log(json);
+
+        // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+        if (json.result == "success") {
+          // Если сообщение отправлено
+          alert("Сообщение отправлено");
+        } else {
+          // Если произошла ошибка
+          alert("Ошибка. Сообщение не отправлено");
+        }
+        // Если не удалось связаться с php файлом
+      } else { alert("Ошибка сервера. Номер: " + req.status); }
+    };
+
+    // Если не удалось отправить запрос. Стоит блок на хостинге
+    req.onerror = function () { alert("Ошибка отправки запроса"); };
+    req.send(new FormData(event.target));
+  }
+</script>
 
 </html>
