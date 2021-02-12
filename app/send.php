@@ -31,12 +31,12 @@ try {
   };
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'andrii shestakov'; // Логин на почте
+  $mail->Host = 'ssl://smtp.gmail.com'; // SMTP сервера вашей почты
+  $mail->Username   = 'shestakovandrij@gmail.com'; // Логин на почте
   $mail->Password   = 'lncjzkxeimnaxnfy'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
+  // $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
-  $mail->setFrom('mail@gmail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('shestakovandrij@gmail.com', 'Port'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('shestakovandrij@gmail.com');
