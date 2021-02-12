@@ -10,7 +10,7 @@ $(function(){
    function scrollMenu() {
     let menu = document.querySelector('.menu');
     window.addEventListener('scroll', () => {
-      if (pageYOffset >= document.documentElement.clientHeight / 1.5) {
+      if (pageYOffset >= document.documentElement.clientHeight / 1) {
         menu.style['position'] = 'fixed'
         menu.style['top'] = '0'
         menu.style['width'] = '100%'
