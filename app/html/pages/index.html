@@ -13,10 +13,10 @@
   <header class="header" id="header" style="background-image: url(images/bg.jpg);">
     <div class="container">
       <div class="header__inner">
-        <h1 class="header__title">
+        <h1 class="header__title" data-aos="fade-right">
           Hello, I'm Andrii Shestakov
         </h1>
-        <p class="header__text">
+        <p class="header__text" data-aos="flip-left">
           Web Developer
         </p>
         <a href="#about" class="header__link">About me</a>
@@ -26,7 +26,7 @@
   </header>
   <main>
 
-    <div class="menu">
+    <div class="menu" data-aos="fade-up">
       <div class="container">
         <div class="menu__inner">
           <a class="menu__logo" href="#header">
@@ -57,17 +57,17 @@
 
     <section class="about" id="about">
       <div class="container container--lg">
-        <h2 class="about__title title">
+        <h2 class="about__title title" data-aos="fade-up-right">
           About me
         </h2>
-        <img class="about__img" src="images/me.jpeg" alt="me">
-        <p class="about__text">
+        <img class="about__img" src="images/me.jpeg" alt="me" data-aos="fade-up-left">
+        <p class="about__text" data-aos="flip-left">
           Здравствуйте!<br>
           Меня зовут Андрей Шестаков. Я занимаюсь web разработкой, а именно: кроссбраузерной адаптивной версткой
           сайтов, landing
           page, интернет-магазинов и постоянно развиваюсь в этом направлении.
         </p>
-        <p class="about__text">
+        <p class="about__text" data-aos="flip-right">
           Создание сайтов любой сложности. На выходе гарантирую
           правильный
           код, оптимизированный сайт.
@@ -77,7 +77,7 @@
 
     <section class="portfolio" id="portfolio" style="background-image: url(images/bg-op.jpg);">
       <div class="container">
-        <h2 class="portfolio__title title">
+        <h2 class="portfolio__title title" data-aos="zoom-in">
           My portfolio
         </h2>
         <p class="portfolio__text">
@@ -86,61 +86,68 @@
         <div class="portfolio__filters nav-filter">
           <button class="nav-filter__btn" data-filter="all">All</button>
           <button class="nav-filter__btn" data-filter=".category-a">Landing</button>
-          <button class="nav-filter__btn" data-filter=".category-b">Pro</button>
+          <button class="nav-filter__btn" data-filter=".category-b">Shop</button>
         </div>
-        <div class="portfolio__items">
-          <article class="portfolio-cart mix category-a">
-            <img class="portfolio-cart__img" src="images/dyson.jpg" alt="product">
-            <div class="portfolio-cart__content">
-              <h3 class="portfolio-cart__title">Arop tech</h3>
-              <span class="portfolio-cart__subtitle">Landing</span>
-              <svg class="portfolio-cart__icon">
-                <use xlink:href="images/sprite.svg#search"></use>
-              </svg>
-            </div>
-            <a class="portfolio-cart__link" href="tech/index.html">
-              Link
-            </a>
-          </article>
-          <article class="portfolio-cart mix category-a">
-            <img class="portfolio-cart__img" src="images/divan.jpg" alt="product">
-            <div class="portfolio-cart__content">
-              <h3 class="portfolio-cart__title">BassBoost</h3>
-              <span class="portfolio-cart__subtitle">Shop | Page</span>
-              <svg class="portfolio-cart__icon">
-                <use xlink:href="images/sprite.svg#search"></use>
-              </svg>
-            </div>
-            <a class="portfolio-cart__link" href="divan/index.html">
-              Link
-            </a>
-          </article>
-          <article class="portfolio-cart mix category-a">
-            <img class="portfolio-cart__img" src="images/phantom-4.jpg" alt="product">
-            <div class="portfolio-cart__content">
-              <h3 class="portfolio-cart__title">Phantom 4</h3>
-              <span class="portfolio-cart__subtitle">Landing</span>
-              <svg class="portfolio-cart__icon">
-                <use xlink:href="images/sprite.svg#search"></use>
-              </svg>
+        <div class="portfolio__items" data-aos="fade-up">
+          <div class="portfolio__item  mix category-a">
 
-            </div>
-            <a class="portfolio-cart__link" href="phantom/index.html">
-              Link
-            </a>
-          </article>
+            <article class="portfolio-cart">
+              <img class="portfolio-cart__img" src="images/dyson.jpg" alt="product">
+              <div class="portfolio-cart__content">
+                <h3 class="portfolio-cart__title">Arop tech</h3>
+                <span class="portfolio-cart__subtitle">Landing</span>
+                <svg class="portfolio-cart__icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <a class="portfolio-cart__link" href="tech/index.html">
+                Link
+              </a>
+            </article>
+          </div>
+          <div class="portfolio__item  mix category-b">
+            <article class="portfolio-cart">
+              <img class="portfolio-cart__img" src="images/divan.jpg" alt="product">
+              <div class="portfolio-cart__content">
+                <h3 class="portfolio-cart__title">BassBoost</h3>
+                <span class="portfolio-cart__subtitle">Shop | Page</span>
+                <svg class="portfolio-cart__icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <a class="portfolio-cart__link" href="divan/index.html">
+                Link
+              </a>
+            </article>
+          </div>
+          <div class="portfolio__item  mix category-a">
+            <article class="portfolio-cart">
+              <img class="portfolio-cart__img" src="images/phantom-4.jpg" alt="product">
+              <div class="portfolio-cart__content">
+                <h3 class="portfolio-cart__title">Phantom 4</h3>
+                <span class="portfolio-cart__subtitle">Landing</span>
+                <svg class="portfolio-cart__icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+
+              </div>
+              <a class="portfolio-cart__link" href="phantom/index.html">
+                Link
+              </a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" id="contact">
+  <footer class="footer" id="contact" data-aos="zoom-out">
     <div class="container">
       <h2 class="footer__title title">Contact me now!</h2>
 
-      <form class="footer__form">
+      <form class="footer__form" data-aos="fade-up">
 
-        <div class="footer__top">
+        <div class="footer__top" data-aos="fade-up">
           <label class="footer__label">
             <input class="footer__input" name="fname" type="text" placeholder="Your name" required>
           </label>
