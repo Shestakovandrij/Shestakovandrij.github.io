@@ -161,7 +161,8 @@
     <div class="container">
       <h2 class="footer__title title">Contact me now!</h2>
 
-      <form class="footer__form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" data-aos="fade-up">
+      <form class="footer__form" enctype="multipart/form-data" method="post" id="form"
+        onsubmit="send(event, 'send.php')" data-aos="fade-up">
 
         <div class="footer__top" data-aos="fade-up">
           <label class="footer__label">
@@ -173,12 +174,12 @@
             <input class="footer__input" name="subscribe[email]" type="email" placeholder="Email address" required>
           </label>
         </div>
-
         <textarea class="footer__desc" name="Contact-Message" maxlength="5000" placeholder="Message"
           required></textarea>
 
-        <input value="Send Message" class="footer__btn" type="submit">
-
+        <button class="footer__btn" type="submit">
+          Send Message
+          </button>
       </form>
 
 
