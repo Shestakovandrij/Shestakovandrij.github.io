@@ -78,6 +78,14 @@
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 40px 14%;
     margin-bottom: 200px;
+
+    @include r(991) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(575) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
