@@ -14,6 +14,7 @@ $(function(){
         menu.style['position'] = 'fixed'
         menu.style['top'] = '0'
         menu.style['width'] = '100%'
+        menu.style['max-width'] = '1920px'
         menu.style['z-index'] = '999'
       } 
     });
